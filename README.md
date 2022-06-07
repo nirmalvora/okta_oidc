@@ -1,13 +1,13 @@
 # okta_oidc
 
-okta_oidc provide simple authentication integratiin in mobile apps.
+okta_oidc provide simple authentication integration in mobile apps.
 
 # Sample
 
-check out sample app [Okta oidc](https://github.com/nirmalvora/okta_oidc/tree/main/example)
+Check out sample app [Okta oidc](https://github.com/nirmalvora/okta_oidc/tree/main/example)
 
 # Installation
-to add okta_oidc to your flutter application [install](https://pub.dev/packages/okta_oidc/install) instructions. Below are some Android and iOS specifics that are required
+To add okta_oidc to your flutter application [install](https://pub.dev/packages/okta_oidc/install) instructions.  Below are some Android and iOS specifics that are required for the okta_oidc to work correctly.
 
 <details>
 <summary>Android</summary>
@@ -98,8 +98,8 @@ This method can be used for social login like linked in, google and apple sign i
 
 ```
   oktaOidc.socialLogin({
-      "idp": "0oa11t5hlpcImo4BX0h8",
-      "idp-scope": "r_liteprofile r_emailaddress"
+      "idp": "Add idp here...",
+      "idp-scope": "Add scope here..."
     }).then((value) {
     });
 ```
