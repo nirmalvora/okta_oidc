@@ -52,7 +52,7 @@ android {
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         manifestPlaceholders = [
-                "appAuthRedirectScheme": "Add redirecrt uri here...."
+                "appAuthRedirectScheme": "Add redirect uri here...."
         ]
     }
 
