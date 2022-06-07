@@ -53,7 +53,13 @@ Add `assets/okta_config.json` file in root of your project with below data.
 ```
 
 # Example
-initialize okta with configuration available in json file.
+
+### Available Methods
+
+### `initOkta`
+This method will initialize okta with config file or map data.
+<details>
+<summary>code</summary>
 
 ```
 OktaOidc oktaOidc = OktaOidc();
@@ -68,11 +74,7 @@ OktaOidc oktaOidc = OktaOidc();
     oktaOidc.initOkta(oktaConfig);
   }
 ```
-
-### Available Methods
-
-### `initOkta`
-This method will initialize okta with config file or map data.
+</details>
 
 
 ### `login`
@@ -88,7 +90,6 @@ This method will redirect you to okta sign in page and return response or error.
 
 </details>
 
-<br>
 
 ### `socialLogin`
 This method can be used for social login like linked in, google and apple sign in. Need to provide idp and idp-scope for social sign in. 
@@ -105,7 +106,6 @@ This method can be used for social login like linked in, google and apple sign i
 
 </details>
 
-<br>
 
 ### `getAccessToken`
 This method will return access token if logged in if token is expired it will refresh the token. 
@@ -118,7 +118,6 @@ This method will return access token if logged in if token is expired it will re
 
 </details>
 
-<br>
 
 ### `getUserProfile`
 This method returns user profile data. 
@@ -131,7 +130,6 @@ This method returns user profile data.
 
 </details>
 
-<br>
 
 ### `logout`
 This method clears the user session. 
