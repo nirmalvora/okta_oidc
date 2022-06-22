@@ -46,4 +46,8 @@ abstract class OktaOidcPlatform extends PlatformInterface {
   Future<dynamic> getUserProfile() {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
+  
+  Future<bool?> isAuthenticated() {
+    throw UnimplementedError('platformVersion() has not been implemented.');
+  }
 }
