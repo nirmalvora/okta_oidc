@@ -62,6 +62,16 @@ class MethodChannelOktaOidc extends OktaOidcPlatform {
       return false;
     }
   }
+  
+   @override
+  Future<bool?> isAuthenticated() async {
+    if (isInitialize) {
+      final status = await methodChannel.invokeMethod<bool>('is-authenticated');
+      return status;
+    } else {
+      return false;
+    }
+  }
 
   @override
   Future<dynamic> getUserProfile() async {
