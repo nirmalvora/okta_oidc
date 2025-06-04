@@ -16,7 +16,6 @@ import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry
-import io.flutter.plugin.common.PluginRegistry.Registrar
 /** OktaOidcPlugin */
 class OktaOidcPlugin: FlutterPlugin, MethodCallHandler,
   PluginRegistry.ActivityResultListener, ActivityAware {
@@ -24,15 +23,6 @@ class OktaOidcPlugin: FlutterPlugin, MethodCallHandler,
 
   private var applicationContext: Context? = null
   private var mainActivity: Activity? = null
-
-  companion object {
-    fun registerWith(registrar: Registrar) {
-      val plugin = OktaOidcPlugin()
-      registrar.activity()?.let { plugin.setActivity(it) }
-      plugin.onAttachedToEngine(registrar.context(), registrar.messenger())
-      registrar.addActivityResultListener(plugin)
-    }
-  }
 
   override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
     this.onAttachedToEngine(flutterPluginBinding.applicationContext, flutterPluginBinding.binaryMessenger)

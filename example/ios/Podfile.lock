@@ -1,0 +1,41 @@
+PODS:
+  - Flutter (1.0.0)
+  - okta_oidc (0.0.1):
+    - Flutter
+    - OktaOidc
+  - OktaOidc (3.11.7):
+    - OktaOidc/AppAuth (= 3.11.7)
+    - OktaOidc/Okta (= 3.11.7)
+  - OktaOidc/AppAuth (3.11.7)
+  - OktaOidc/Okta (3.11.7):
+    - OktaOidc/AppAuth
+  - shared_preferences_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - okta_oidc (from `.symlinks/plugins/okta_oidc/ios`)
+  - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/darwin`)
+
+SPEC REPOS:
+  trunk:
+    - OktaOidc
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  okta_oidc:
+    :path: ".symlinks/plugins/okta_oidc/ios"
+  shared_preferences_foundation:
+    :path: ".symlinks/plugins/shared_preferences_foundation/darwin"
+
+SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  okta_oidc: 134e3f6b85a7a487c40beb41e4eb3db7e2b9bf80
+  OktaOidc: 2e6ddf3b1658766bfe1f2b19ef853df1504ae0e5
+  shared_preferences_foundation: 9e1978ff2562383bd5676f64ec4e9aa8fa06a6f7
+
+PODFILE CHECKSUM: cc1f88378b4bfcf93a6ce00d2c587857c6008d3b
+
+COCOAPODS: 1.16.2
