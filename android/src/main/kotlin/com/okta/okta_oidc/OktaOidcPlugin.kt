@@ -75,6 +75,8 @@ class OktaOidcPlugin: FlutterPlugin, MethodCallHandler,
           logout(this.mainActivity!!)
         }"get-user-profile"->{
           getUserProfile()
+        }"is-authenticated"->{
+          isAuthenticated()
         }
         else -> {
           PendingOperation.error("Method not implemented", "Method called: $call.method")

@@ -150,3 +150,7 @@ fun getUserProfile(){
         })
 
 }
+
+fun isAuthenticated() {
+    PendingOperation.success(OktaClient.getWebClient().sessionClient.isAuthenticated)
+   }

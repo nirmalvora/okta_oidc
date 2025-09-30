@@ -41,4 +41,8 @@ class OktaOidc {
   Future<dynamic> getUserProfile() {
     return OktaOidcPlatform.instance.getUserProfile();
   }
+ 
+  Future<bool?> isAuthenticated() {
+    return OktaOidcPlatform.instance.isAuthenticated();
+  }
 }
